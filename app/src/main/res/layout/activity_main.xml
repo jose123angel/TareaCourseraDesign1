@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/txvNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre"
+        android:textStyle="bold"
+        android:textSize="@dimen/nombre_contacto"
+        ></TextView>
+    <EditText
+        android:id="@+id/edtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_below="@+id/txvNombre"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/left"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/txvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textStyle="bold"
+            android:textSize="@dimen/nombre_email"
+            android:layout_below="@id/edtNombre"
+            ></TextView>
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:layout_below="@+id/txvEmail"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/left"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/txvTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/telefono"
+                android:textStyle="bold"
+                android:textSize="@dimen/telefono"
+                android:layout_below="@id/edtEmail"
+                ></TextView>
+            <EditText
+                android:id="@+id/edtTelefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text=""
+                android:layout_below="@+id/txvTelefono"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/left"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/txvDescripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/descripcion"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/descripcion"
+                    android:layout_below="@id/edtTelefono"
+                    ></TextView>
+                <EditText
+                    android:id="@+id/edtDescripcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:layout_below="@+id/txvDescripcion"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/left"
+                    />
+                <Button
+                    android:id="@+id/bfecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/fecha"
+                    android:layout_below="@id/edtDescripcion"
+                    android:layout_marginLeft="@dimen/left"
+                    />
+                <EditText
+                    android:id="@+id/edtFecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Elija ud fecha de nacimiento"
+                    android:textStyle="italic"
+                    android:layout_below="@+id/bfecha"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/left"
+                    />
+                <Button
+                    android:id="@+id/btnSiguiente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edtFecha"
+                    android:textStyle="italic"
+                    android:textSize="@dimen/siguiente"
+                    android:text="@string/next"
+                    android:layout_marginLeft="@dimen/left"
+                    android:onClick="Enviar"
+                    />
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

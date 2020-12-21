@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TareaMaterialDesign</string>
+    <string name="nombre">Escriba su nombre:</string>
+    <string name="email">Escriba su email:</string>
+    <string name="telefono">Escriba su telefono:</string>
+    <string name="descripcion">Escriba su descripción</string>
+    <string name="nacimiento">Elija usted su fecha de nacimiento</string>
+    <string name="fecha">Fecha nacimiento:</string>
+    <string name="next">Siguiente</string>
+    <string name="Snombre">Este es su nombre:</string>
+<string name="Semail">Este es su email:</string>
+<string name="Stelefono">Este es su telefono:</string>
+<string name="Sdescripcion">Esta es su descripción</string>
+<string name="Snacimiento">Esta es su fecha de nacimiento</string>
+    <string name="editar">Editar</string>
+
+</resources>
